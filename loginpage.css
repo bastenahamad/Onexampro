@@ -5,6 +5,9 @@ body{
     font-family: 'Roboto Mono', monospace;
     align-items:  center;
     justify-content: center;
+    background-image: url('./images/b.png');
+    background-size: cover;
+    
 }
 a { color: inherit; } 
 .material-symbols-outlined {
@@ -25,6 +28,8 @@ a { color: inherit; }
     height : 90%;
     padding: 10px;
     border-radius: 10px;
+    background-image: url('./images/c.png');
+    background-size: cover;
 }
 .userForm{
     display: flex;
@@ -54,6 +59,7 @@ a { color: inherit; }
     opacity: 0.5;
 }
 .quote{
+    color: white;
     margin : 20px;
 }
 
