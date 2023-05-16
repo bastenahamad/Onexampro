@@ -64,3 +64,8 @@ button{
   display: flex;
   justify-content: space-between;
 }
+.buttonscla{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
