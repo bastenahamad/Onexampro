@@ -5,8 +5,8 @@ body{
     font-family: 'Roboto Mono', monospace;
     align-items:  center;
     justify-content: center;
-    background-image: url('./images/b.png');
-    background-size: cover;
+    background-image: url('./images/c.png');
+    background-size:cover;
     
 }
 a { color: inherit; } 
@@ -28,8 +28,8 @@ a { color: inherit; }
     height : 90%;
     padding: 10px;
     border-radius: 10px;
-    background-image: url('./images/c.png');
-    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
 }
 .userForm{
     display: flex;
