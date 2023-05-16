@@ -25,7 +25,7 @@ async function print_question(){
         document.querySelector(".nextquestion").style.display = "inline-block";
         document.querySelector(".prevquestion").style.display = "inline-block"; 
     }
-    reset_color(options[5]);
+    reset_color(5);
     let question_data = await fetch('./question_data/data'+ques_no+'.json')
     .then((response) => response.json());
     document.querySelector(".question").innerHTML = "Q" + (ques_no + 1) +". " +  question_data.question;
@@ -35,7 +35,7 @@ async function print_question(){
         question_data.label[i] +". " +
         question_data.options[i] + "<br>";
     } 
-    reset_color(options[answers[ques_no]]) ;
+    reset_color(answers[ques_no]) ;
     compare();
 }
 
@@ -66,37 +66,40 @@ press_pre.addEventListener("click", ()=>{
 
 async function reset_color(option){
     for(var i = 0 ; i<5 ;i++){
-        if(option == options[i])
+        if(options[option] == options[i])
             continue;
         options[i].style.backgroundColor = "white"; 
     }
-    if(option != options[5])
-        option.style.backgroundColor = "#ADD8E6" ; 
+    if(options[option] != options[5]){
+        options[option].style.backgroundColor = "#ADD8E6" ;
+        navbut[ques_no].style.backgroundColor = "#ADD8E6";
+        console.log(navbut[option].innerHTML + "this it it");
+    }     
     console.log(answers);
 
 }
 
 options[0].addEventListener("click", ()=>{
-    reset_color(options[0]);
+    reset_color(0);
     answers[ques_no] = 0;
 })
 options[1].addEventListener("click", ()=>{
-    reset_color(options[1]);
+    reset_color(1);
     answers[ques_no] = 1;
 
 })
 options[2].addEventListener("click", ()=>{
-    reset_color(options[2]);
+    reset_color(2);
     answers[ques_no] = 2;
 
 })
 options[3].addEventListener("click", ()=>{
-    reset_color(options[3]);
+    reset_color(3);
     answers[ques_no] = 3;
 
 })
 options[4].addEventListener("click", ()=>{
-    reset_color(options[4]);
+    reset_color(4);
     answers[ques_no] = 4;
 
 })
