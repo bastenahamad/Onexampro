@@ -69,3 +69,9 @@ button{
   flex-direction: row;
   gap: 10px;
 }
+.image{
+  margin-top: 5vh;
+  width: 10em;
+  height: 10em;
+  background-color: black;
+}
