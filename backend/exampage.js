@@ -10,9 +10,11 @@ options.push(document.querySelector(".op3"));
 options.push(document.querySelector(".op4"));
 options.push(document.querySelector(".op5"));
 options.push(document.querySelector("null"));
-
+var unattempted = "red";
+var attempted = "green";
 
 async function print_question(){
+    navbut[ques_no].style.backgroundColor = unattempted;
     if(ques_no==0) {
         document.querySelector(".nextquestion").style.display = "inline-block";
         document.querySelector(".prevquestion").style.display = "none";
@@ -72,7 +74,7 @@ async function reset_color(option){
     }
     if(options[option] != options[5]){
         options[option].style.backgroundColor = "#ADD8E6" ;
-        navbut[ques_no].style.backgroundColor = "#ADD8E6";
+        navbut[ques_no].style.backgroundColor = attempted;
         console.log(navbut[option].innerHTML + "this it it");
     }     
     console.log(answers);
@@ -111,6 +113,17 @@ navbut.forEach(i => {
         print_question();
     })
 })
+
+// clear selection
+
+const clear = document.querySelector(".clearSelection");
+
+clear.addEventListener("click", ()=>{
+    answers[ques_no] = null;
+    navbut[ques_no].style.backgroundColor = unattempted;
+    reset_color(6);
+});
+
 
 export default answers;
 export {print_question, ques_no};
