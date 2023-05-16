@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="./landingpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div> 
+            <ul>
+                <li>Use your authorized ID Card to verify yourself.</li>
+                <li>Make sure there is no other person in the camera view.</li>
+                <li>Make sure you have enough light in the room.</li>
+            </ul>
+        </div>
+        <div class = "vid">
+            <video class = "cumshot" id = "webcam" autoplay playsinlne width="400" height="'600"></video>
+            <canvas id = "canvas"></canvas>
+        </div>
+        <div class = buttons>
+            <a onClick = 'Capture()'>
+                <button class = 'controls'> Capture </button>
+            </a>
+            <a href = "Instructionspage.html">
+            <button class = 'sub controls' >Submit</button>
+            </a>
+        </div>
+        <div class="display"></div>
+    </div>
+    <script>
+        const webCamElement = document.getElementById('webcam');
+        const canvasElement = document.getElementById('canvas');
+        const webcam = new Webcam(webCamElement,'user',canvasElement);
+        webcam.start();
+        function Capture(){
+            webcam.snap();
+        }
+
+    </script>
+    <script src = './test.js'> </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Roboto+Mono:wght@300&display=swap');
+body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    align-items:  center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2.5%;
+    width : 90%;
+    height : 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.instructions{
+    padding : 10px;
+}
+.listOfInst{
+    padding-top : 20px;
+    line-height: 2.5em;
+    margin-top: 5px;
+}
+.logo{
+    font-size: 40px; 
+    font-weight: 800;
+}
+.Stest{
+    margin-top: 20px;
+    background-color: rgb(200, 201, 201);
+    padding: 5px;
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.declare{
+    font-weight: 1000;
+}
