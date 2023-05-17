@@ -12,6 +12,3 @@ async function Capture(){
     image.innerHTML = "<img src =" + user_photo + ">"
     webcam.stop();
 }
-
-
-
