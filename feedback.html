@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wcidth=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-      (function(){
-          emailjs.init("5LX1iah5d96Ca5zCp");
-      })();
-    </script>
     <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
@@ -28,83 +18,83 @@
             <form>
                   <legend><b>I was able to logged in easily.</b></legend><br>
                   <div>
-                    <input type="radio" class="contactChoice1"/>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
                     <label for="contactChoice1">Highly Disagree</label>
-              
-                    <input type="radio" class="contactChoice2"/>
+
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
                     <label for="contactChoice2">Disagree</label>
-              
-                    <input type="radio" class="contactChoice3" />
+
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
                     <label for="contactChoice3">Neutral</label>
 
-                    <input type="radio" class="contactChoice3" />
-                    <label for="contactChoice3">Agree</label>
+                    <input type="radio" id="contactChoice4" name="contact" value="mail" />
+                    <label for="contactChoice4">Agree</label>
 
-                    <input type="radio" class="contactChoice3" />
-                    <label for="contactChoice3">Highly Agree</label>
+                    <input type="radio" id="contactChoice5" name="contact" value="mail" />
+                    <label for="contactChoice5">Highly Agree</label>
                   </div><br>
             </form>
             <form>
                 <legend><b>Authincation was easy.</b></legend><br>
                 <div>
-                  <input type="radio" class="contactChoice1"/>
-                  <label for="contactChoice1">Highly Disagree</label>
-            
-                  <input type="radio" class="contactChoice2"/>
-                  <label for="contactChoice2">Disagree</label>
-            
-                  <input type="radio" class="contactChoice3"/>
-                  <label for="contactChoice3">Neutral</label>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <label for="contactChoice1">Highly Disagree</label>
 
-                  <input type="radio" class="contactChoice3"/>
-                  <label for="contactChoice3">Agree</label>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <label for="contactChoice2">Disagree</label>
 
-                  <input type="radio" class="contactChoice3"/>
-                  <label for="contactChoice3">Highly Agree</label>
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <label for="contactChoice3">Neutral</label>
+
+                    <input type="radio" id="contactChoice4" name="contact" value="mail" />
+                    <label for="contactChoice4">Agree</label>
+
+                    <input type="radio" id="contactChoice5" name="contact" value="mail" />
+                    <label for="contactChoice5">Highly Agree</label>
                 </div><br>
           </form>
           <form>
             <legend><b>I was assisted properly in case of any issue.</b></legend><br>
             <div>
-              <input type="radio" class="contactChoice1"/>
-              <label for="contactChoice1">Highly Disagree</label>
-        
-              <input type="radio" class="contactChoice2"/>
-              <label for="contactChoice2">Disagree</label>
-        
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Neutral</label>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <label for="contactChoice1">Highly Disagree</label>
 
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Agree</label>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <label for="contactChoice2">Disagree</label>
 
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Highly Agree</label>
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <label for="contactChoice3">Neutral</label>
+
+                    <input type="radio" id="contactChoice4" name="contact" value="mail" />
+                    <label for="contactChoice4">Agree</label>
+
+                    <input type="radio" id="contactChoice5" name="contact" value="mail" />
+                    <label for="contactChoice5">Highly Agree</label>
             </div><br>
            </form>
            <form>
             <legend><b>The overall experience at this platform was interactive.</b></legend><br>
             <div>
-              <input type="radio" class="contactChoice1"/>
-              <label for="contactChoice1">Highly Disagree</label>
-        
-              <input type="radio" class="contactChoice2"/>
-              <label for="contactChoice2">Disagree</label>
-        
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Neutral</label>
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <label for="contactChoice1">Highly Disagree</label>
 
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Agree</label>
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <label for="contactChoice2">Disagree</label>
 
-              <input type="radio" class="contactChoice3"/>
-              <label for="contactChoice3">Highly Agree</label>
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <label for="contactChoice3">Neutral</label>
+
+                    <input type="radio" id="contactChoice4" name="contact" value="mail" />
+                    <label for="contactChoice4">Agree</label>
+
+                    <input type="radio" id="contactChoice5" name="contact" value="mail" />
+                    <label for="contactChoice5">Highly Agree</label>
             </div><br>
            </form>
            <div class="feed">
-                <!-- <a href="./complete.html" style="text-decoration:none">     -->
-                    <button class="sub btn " onClick = "sendMail()">Finish</button>
-                <!-- </a> -->
+                <a href="./complete.html" style="text-decoration:none">    
+                    <button class="sub btn">Finish</button>
+                </a>
            </div>
 
         </div>
