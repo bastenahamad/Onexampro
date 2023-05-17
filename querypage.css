@@ -1,31 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Roboto+Mono:wght@300&display=swap');
+body{
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    align-items:  center;
+    justify-content: center;
+    background-image: url("./images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
+    background-size: cover;
+}
+.container{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+}
+
 .forms{
     display: flex;
     padding-left: 950px;
     align-items: right;
 }
-.submit{
-    margin-top: 20px;
-    font-size: 15px;
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
-    width: 150px;
-    
-    opacity: 0.8;
-    border:none;
-    border-radius: 5px;
-    
-}
-/* .submit:active{
-
-} */
 .email,.query{
-    padding: 10px;
+    padding: 5px 5px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    opacity: 0.5;
-    width: 200px;
+    width: 180px;
     border-radius: 10px;
+
 }
 .whatdoyouknow{
     text-align: center;
@@ -82,5 +81,42 @@
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
- 
+  }
+  .form{
+    justify-content: center;
+  }
+  .btn {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .btn:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+  
+  @media (min-width: 768px) {
+    .btn {
+      padding: 10px 30px;
+    }
   }

@@ -7,6 +7,8 @@ body{
     align-items:  center;
     justify-content: center;
     background-color: #EEEDE7;
+    background-image: url("./images/onl.jpg");
+    background-size: cover;
 }
 
 .container{
@@ -21,7 +23,8 @@ body{
     padding: 20px;
     border-radius: 10px;
     align-items: center;
-    background-color: white;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
 }
 .logo{
     font-size: 40px; 
