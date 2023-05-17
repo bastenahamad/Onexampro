@@ -5,6 +5,7 @@ body{
     font-family: 'Roboto Mono', monospace;
     align-items:  center;
     justify-content: center;
+    background-color: ivory;
 }
 .container{
     display: flex;
@@ -17,6 +18,7 @@ body{
     height : 90%;
     padding: 20px;
     border-radius: 10px;
+    background-color: white;
 }
 .logo{
     font-size: 40px; 
