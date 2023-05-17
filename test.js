@@ -41,3 +41,8 @@ const getNewQuote = async () =>
     quotehere.innerHTML = randomquote;
 }
 getNewQuote();
+
+function storeEmail(){
+    const emailvalue = document.querySelector(".email")
+    localStorage.setItem("emial",emailvalue);
+}

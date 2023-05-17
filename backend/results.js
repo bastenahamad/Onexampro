@@ -55,7 +55,7 @@ export default function compare(){
 const showResult = document.querySelector(".submit");
 
 showResult.addEventListener('click', ()=>{
-    window.open(,"_self");
+    window.open("../feedback.html","_self");
 })
 
 

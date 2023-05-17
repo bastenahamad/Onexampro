@@ -6,6 +6,13 @@
     display : inline-block;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
+  button{
+  
+    border: none;
+    padding: 20px;
+    border-radius: 100%;
+  
+  }
 
 .ops{
     display : block;
@@ -52,14 +59,7 @@
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
 }
 
-button{
-  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
-  margin:20%;
-  display: block;
-  padding:15px;
-  border-radius: 25%;
-  border-style: none;
-}
+
 .box{
   display: flex;
   justify-content: space-between;
@@ -74,4 +74,18 @@ button{
   width: 10em;
   height: 10em;
   background-color: black;
+}
+.questionlist{
+  margin-top: 10%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  height: 40%;
+  width: 40%;
+  gap : 4%;
+  
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
