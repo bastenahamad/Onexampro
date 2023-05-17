@@ -54,9 +54,17 @@ export default function compare(){
 }
 
 const showResult = document.querySelector(".submit");
+const sub_yes = document.querySelector(".yes");
+const sub_no = document.querySelector(".no");
 
+sub_yes.addEventListener('click', ()=>{
+    window.open("../feedback.html", "_self");
+})
+sub_no.addEventListener('click', ()=>{
+    document.querySelector(".sure").style.display = "none";
+})
 showResult.addEventListener('click', ()=>{
-    window.open("../feedback.html","_self");
+    document.querySelector(".sure").style.display = "inline-block";
 })
 
 

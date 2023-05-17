@@ -58,3 +58,7 @@ function sendMail(){
         score: score,
     });
 }
+function areyousure(){
+    window.alert("Are you sure you wantt to submit ?");
+    
+}
