@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Roboto+Mono:wght@300&display=swap');
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    align-items:  center;
+    justify-content: center;
+    background-color: #EEEDE7;
+}
 .container{
     margin-top: 2%;
     padding: 50px; 
