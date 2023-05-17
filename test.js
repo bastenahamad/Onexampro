@@ -61,3 +61,12 @@ function sendMail(){
     });
     
 }
+
+
+
+function store_name(){
+    const username = document.querySelector(".userName").value;
+    console.log(document.querySelector(".userName").value);
+    localStorage.setItem("name",username);
+    window.open("./infopage.html", "_self");
+}

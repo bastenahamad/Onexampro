@@ -17,6 +17,7 @@ var attempted = "#76B947";
 
 async function print_question(){
     document.querySelector(".sure").style.display = "none";
+    document.querySelector(".user").innerHTML = localStorage.getItem("name");
     img.innerHTML = "<img src = " + localStorage.getItem("image") + " width = '100%' height = '100%'>";
     navbut[ques_no].style.backgroundColor = unattempted;
     if(ques_no==0) {
