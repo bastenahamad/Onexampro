@@ -1,3 +1,4 @@
+
 .container{
     margin-top: 2%;
     padding: 50px; 
@@ -21,9 +22,10 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}    
+}  
+ 
 
-.buttons {
+.buttons, .btn {
   appearance: button;
   backface-visibility: hidden;
   background-color: #405cf5;
@@ -88,4 +90,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.sure{
+  display:none;
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 25%; 
+  padding: 5%;
+  font-size: 25px;
+  background-color: white;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sure-but{
+  margin-left: 15%;
 }
