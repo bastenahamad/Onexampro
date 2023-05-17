@@ -62,4 +62,6 @@ body{
       padding: 10px 30px;
     }
   }
- 
+  .sillywaytostore{
+    display: none;
+  }
