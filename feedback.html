@@ -6,6 +6,14 @@
     <meta name="viewport" content="wcidth=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="feedback.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("5LX1iah5d96Ca5zCp");
+      })();
+    </script>
 </head>
 <body>
     
@@ -94,7 +102,7 @@
            </form>
            <div class="feed">
                 <a href="./complete.html" style="text-decoration:none">     
-                    <button class="sub btn " onClick = "sendMail()">Finish</button>
+                    <button class="sub btn ">Finish</button>
                 </a>
            </div>
 

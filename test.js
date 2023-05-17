@@ -48,6 +48,8 @@ function storeEmail(){
     localStorage.setItem("email",emailvalue);
 }
 
+document.querySelector(".sub").addEventListener('click',sendMail());
+
 function sendMail(){
     const emailadd = localStorage.getItem("email");
     const score = localStorage.getItem("score");
@@ -57,4 +59,5 @@ function sendMail(){
         to_name: emailadd,
         score: score,
     });
+    
 }
