@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <meta name="viewport" content="wcidth=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("5LX1iah5d96Ca5zCp");
+      })();
+    </script>
     <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
@@ -93,9 +102,9 @@
             </div><br>
            </form>
            <div class="feed">
-                <a href="./complete.html" style="text-decoration:none">    
-                    <button class="sub btn " onClick = "sendMail">Finish</button>
-                </a>
+                <!-- <a href="./complete.html" style="text-decoration:none">     -->
+                    <button class="sub btn " onClick = "sendMail()">Finish</button>
+                <!-- </a> -->
            </div>
 
         </div>
@@ -103,6 +112,5 @@
     </div>
 
     <script src = './test.js'></script>
-    <script src = './Sendmail.js'></script>
 </body>
 </html>

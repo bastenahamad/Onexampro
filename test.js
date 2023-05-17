@@ -43,6 +43,18 @@ const getNewQuote = async () =>
 getNewQuote();
 
 function storeEmail(){
-    const emailvalue = document.querySelector(".email")
-    localStorage.setItem("emial",emailvalue);
+    const emailvalue = document.querySelector(".email").value;
+    console.log(emailvalue);
+    localStorage.setItem("email",emailvalue);
+}
+
+function sendMail(){
+    const emailadd = localStorage.getItem("email");
+    const score = localStorage.getItem("score");
+    console.log(emailadd + " " + score);
+    emailjs.send("service_poqa9pk","template_3ldt9da",{
+        from_name: "WhatDoYouKnow.results",
+        to_name: emailadd,
+        score: score,
+    });
 }

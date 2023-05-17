@@ -50,8 +50,14 @@ async function print_question(){
 
 var press_sta = document.querySelector(".nextquestion");
 var press_pre = document.querySelector(".prevquestion");
+var press_sub = document.querySelector(".submit");
 
 print_question(0);
+press_sub.addEventListener("click", ()=>{
+    
+    compare();
+    
+})
 
 press_sta.addEventListener("click", ()=>{
     ques_no++;
