@@ -59,6 +59,5 @@ function sendMail(){
     });
 }
 function areyousure(){
-    window.alert("Are you sure you wantt to submit ?");
-    
+    sendMail();
 }
