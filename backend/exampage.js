@@ -1,9 +1,11 @@
 import compare from "./results.js";
 import { navbut } from "./info_bar.js";
 
+
 var ques_no = 0;
 var answers = [];
 var options = [];
+var img = document.querySelector(".image")
 options.push(document.querySelector(".op1"));
 options.push(document.querySelector(".op2"));
 options.push(document.querySelector(".op3"));
@@ -14,16 +16,21 @@ var unattempted = "red";
 var attempted = "green";
 
 async function print_question(){
+    img.innerHTML = "<img src = " + localStorage.getItem("image") + " width = '100%' height = '100%'>";
     navbut[ques_no].style.backgroundColor = unattempted;
     if(ques_no==0) {
         document.querySelector(".nextquestion").style.display = "inline-block";
         document.querySelector(".prevquestion").style.display = "none";
+        document.querySelector(".submit").style.display = "none";
+
     }
     else if(ques_no == 9){
         document.querySelector(".prevquestion").style.display = "inline-block"; 
         document.querySelector(".nextquestion").style.display = "none";
+        document.querySelector(".submit").style.display = "inline-block";
     }
     else{
+        document.querySelector(".submit").style.display = "none";
         document.querySelector(".nextquestion").style.display = "inline-block";
         document.querySelector(".prevquestion").style.display = "inline-block"; 
     }
@@ -43,6 +50,7 @@ async function print_question(){
 
 var press_sta = document.querySelector(".nextquestion");
 var press_pre = document.querySelector(".prevquestion");
+
 print_question(0);
 
 press_sta.addEventListener("click", ()=>{

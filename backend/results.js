@@ -1,6 +1,11 @@
 import answers from "./exampage.js";
+
+
 var score = 0;
 var correct_answers = [];
+
+
+
 async function get_question(ques_no){
     
     let question_data = await fetch('./question_data/data'+ques_no+'.json')
@@ -47,5 +52,10 @@ export default function compare(){
     console.log(score);
 }
 
+const showResult = document.querySelector(".submit");
+
+showResult.addEventListener('click', ()=>{
+    window.open(,"_self");
+})
 
 

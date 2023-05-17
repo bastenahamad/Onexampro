@@ -1,17 +1,17 @@
 
 const webCamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
-
+const store = document.querySelector(".sillywaytostore");
 const webcam = new Webcam(webCamElement,'user',canvasElement);
 webcam.start();
-const user_photo = "image";
+var user_photo = "image";
 console.log(user_photo);
 async function Capture(){
     user_photo =  webcam.snap();
-    console.log(user_photo);
-    image.innerHTML = "<img src =" + user_photo + ">"
-    webcam.stop();
+    console.log(user_photo); 
+    store.innerHTML = user_photo;
+    console.log("success");  
+    localStorage.setItem('image', user_photo); 
 }
-
 
 
