@@ -12,8 +12,8 @@ options.push(document.querySelector(".op3"));
 options.push(document.querySelector(".op4"));
 options.push(document.querySelector(".op5"));
 options.push(document.querySelector("null"));
-var unattempted = "red";
-var attempted = "green";
+var unattempted = "#ff4d4d";
+var attempted = "#76B947";
 
 async function print_question(){
     img.innerHTML = "<img src = " + localStorage.getItem("image") + " width = '100%' height = '100%'>";
