@@ -49,6 +49,7 @@ export default function compare(){
         }
         
     }
+    localStorage.setItem("score", score);
     console.log(score);
 }
 
