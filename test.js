@@ -58,6 +58,3 @@ function sendMail(){
         score: score,
     });
 }
-function areyousure(){
-    sendMail();
-}
