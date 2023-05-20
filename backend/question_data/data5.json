@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"question":"What can eating hamburger cause immediately after eating it?","label":["A","B","C","D","E"],"options":["tasty","healthproblems","eatcake","indigestion","gainweight"],"answer":"D"}
+=======
+{"question":"What happens to a body after death?","label":["A","B","C","D","E"],"options":["rebirth","humanexperience","sadness","decomposition","obesity"],"answer":"D"}
+>>>>>>> 955ad9fde8ee4275b54c7db3d93f82aead764943

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"question":"What do people aim to do at work?","label":["A","B","C","D","E"],"options":["completejob","learnfromeachother","killanimals","wearhats","talktoeachother"],"answer":"A"}
+=======
+{"question":"The woman is watching television and trying to forget her day, what is her goal?","label":["A","B","C","D","E"],"options":["entertainment","fallingasleep","gettingfat","crying","relaxation"],"answer":"E"}
+>>>>>>> 955ad9fde8ee4275b54c7db3d93f82aead764943
